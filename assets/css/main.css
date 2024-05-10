@@ -758,3 +758,222 @@ a {
   color: #d3d3d3;
 }
 
+.find-you{
+  display: flex;
+  position: absolute;
+  font-weight: 400;
+  top: 100%;
+  left: 20px;
+  font-size: 1rem;
+  color: #d0d0d0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.find-you a{
+  font-weight: 700;
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+}
+
+
+/* Stats Section */
+
+
+.stats-container {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Use rgba for transparent background */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  top: 300%;
+  left: 190px;
+}
+
+.stat {
+  text-align: left;
+  display: flex;
+}
+
+.stat h3 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: #02254D;
+  font-family: "Antonio", sans-serif;
+}
+
+.stat p {
+  font-size: 1.2em;
+  padding-left: 20px;
+  font-weight: 800;
+  color: #02254D;
+  font-family: "Antonio", sans-serif;
+}
+
+
+ /* Testimonials & Why Choose Us Section */
+
+
+.testimonial {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  top: 350%;
+  left: 190px;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+}
+
+.testimonial h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: #02254D;
+  font-family: "Antonio", sans-serif;
+}
+
+
+.testimonial-box {
+  margin: 10px 10px;
+  padding: 20px;
+  background-color: rgba(146, 146, 146, 0.7); 
+  border-radius: 10px; 
+  color: #fff; 
+  position: absolute; 
+  top: 90%;
+  right: 750px;
+}
+
+/* .testimonial-box::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; 
+  left: 350px; 
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent; 
+  border-right: 20px solid transparent; 
+  border-bottom: 20px solid rgba(182, 182, 182, 0.7); 
+  top: 120%;
+} */
+
+.triangle-down {
+  display: flex;
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #8e8e8e;
+  top: 310%;
+  left: 350px; 
+}
+
+.client-name{
+  display: flex;
+  position: absolute;
+  font-weight: bold; 
+  font-style: italic; 
+  margin-top: 10px; 
+  top: 340%;
+  left: 330px;
+
+}
+
+.speech-bubble {
+  font-style: italic; 
+  font-size: 1.2em;
+  margin-bottom: 10px; 
+}
+
+.client-name {
+  font-weight: bold; 
+}
+
+
+/* Services section styles */
+
+.choose-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+  position: relative; /* Added position relative for absolute positioning of child elements */
+}
+
+.choose-text {
+  margin-bottom: 40px;
+  text-align: center; /* Center align text */
+}
+
+.choose-text-h1,
+.choose-text-h2 {
+  font-family: "Antonio", sans-serif;
+  color: #ff0000; /* Red color for h1 */
+  margin: 0; /* Remove default margin */
+}
+
+.choose-text-h1 {
+  font-size: 2.5em;
+}
+
+.choose-text-h2 {
+  font-size: 1.2em;
+}
+
+/* Positioning absolute elements */
+.choose-text-h1,
+.choose-text-h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.accordion {
+  background-color: #ffffff;
+  color: #707070;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s;
+  margin-bottom: 10px; /* Added margin bottom for spacing between buttons */
+}
+
+.accordion:hover {
+  background-color: #f0f0f0;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active, .accordion.active {
+  background-color: #ccc;
+}
+
+.active:after, .accordion.active:after {
+  content: '\2796';
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
