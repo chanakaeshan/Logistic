@@ -846,7 +846,7 @@ a {
   border-radius: 10px; 
   color: #fff; 
   position: absolute; 
-  top: 90%;
+  top: 30%;
   right: 750px;
 }
 
@@ -871,7 +871,7 @@ a {
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 	border-top: 50px solid #8e8e8e;
-  top: 310%;
+  top: 91%;
   left: 350px; 
 }
 
@@ -881,7 +881,7 @@ a {
   font-weight: bold; 
   font-style: italic; 
   margin-top: 10px; 
-  top: 340%;
+  top: 100%;
   left: 330px;
 
 }
@@ -893,7 +893,7 @@ a {
 }
 
 .client-name {
-  font-weight: bold; 
+  font-weight: 400; 
 }
 
 
@@ -908,16 +908,16 @@ a {
   position: relative; /* Added position relative for absolute positioning of child elements */
 }
 
-.choose-text {
+/* .choose-text {
   margin-bottom: 40px;
-  text-align: center; /* Center align text */
-}
+  text-align: center; 
+} */
 
-.choose-text-h1,
 .choose-text-h2 {
+  font-size: 1100px;
+  color: #02254D;
   font-family: "Antonio", sans-serif;
-  color: #ff0000; /* Red color for h1 */
-  margin: 0; /* Remove default margin */
+
 }
 
 .choose-text-h1 {
@@ -928,13 +928,19 @@ a {
   font-size: 1.2em;
 }
 
-/* Positioning absolute elements */
-.choose-text-h1,
-.choose-text-h2 {
+.choose-text h2 {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: 2em;
+  color: #02254D;
+  font-family: "Antonio", sans-serif;
+  top: -1%;
+}
+
+.choose-text p {
+  font-size: 1em;
+  margin-top: 5px;
+  color: #9a9a9a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .accordion {
@@ -947,7 +953,8 @@ a {
   border: none;
   outline: none;
   transition: background-color 0.4s;
-  margin-bottom: 10px; /* Added margin bottom for spacing between buttons */
+  margin-bottom: 10px; 
+  left: 350px;
 }
 
 .accordion:hover {
@@ -973,7 +980,194 @@ a {
 .accordion:after {
   content: '\02795';
   font-size: 13px;
-  color: #777;
+  color: #000000;
   float: right;
   margin-left: 5px;
 }
+
+
+/* Client Logos Section */
+
+.logo-carousel {
+  display: flex;
+  position: absolute;
+  background-color: #ffffff; 
+  padding: 20px;
+  width: 80rem;
+  height: 400px;
+  overflow: hidden; 
+  top: 600px; 
+  z-index: 999; 
+  right: 10px;
+}
+
+.carousel-container {
+  display: flex;
+}
+
+
+.carousel {
+  display: flex;
+  animation: carousel-animation 25s infinite linear; 
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  padding: 0 100px;
+}
+
+.carousel-item img {
+  width: 50%;
+  height: 50%;
+  filter: grayscale(100%); /* Apply grayscale filter to logos */
+}
+
+@keyframes carousel-animation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+/* News Section */
+
+.news-text{
+  display: grid; /* Change display to grid */
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(2, 2);
+  position: absolute;
+  font-weight: 400;
+  top: 700px;
+  left: 20px;
+  font-size: 1rem;
+  color: #d0d0d0;
+  top: 270%;
+  text-align: center;
+  left: 400px;
+}
+
+.image-container {
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px; 
+  width: 150%; 
+  margin: 0 auto; 
+  top: 20%;
+  right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-container p {
+  width: 100%; 
+  text-align: center;
+  margin: 5px 0; 
+}
+
+
+/* Footer Section */
+
+.footer-section{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 80px;
+  position: relative; 
+  top: 700px;
+  background: #5D6C83;
+  width: 395%;
+  right: 1000px;
+  height: 70vh;
+  top: 120%;
+}
+
+.email-b0x{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+  position: relative; 
+  top: 700px;
+}
+
+.text-email-box{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+  font-size: 2rem;
+  position: relative; 
+  top: -150px;
+  right: 500px;
+  color: #ffffff;
+  font-family: "Antonio", sans-serif;
+  
+}
+
+.text-p{
+  position: absolute;
+  font-size: 1rem;
+  top: 100px;
+  left: 160px;
+  padding-top: 20px;
+  color: #ffffff;
+  font-family: "Antonio", sans-serif;
+}
+
+.email-box-container {
+  max-width: 400px;
+  position: relative;
+}
+
+
+
+
+
+.newsletter-container {
+  position: absolute;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  top: 15%;
+  right: 100px;
+}
+
+.email-input {
+  padding: 10px 50px;
+  margin-right: 5px; /* Add margin between input and button */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Antonio", sans-serif;
+}
+
+.signup-button {
+  background-color: #F39C11;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-family: "Antonio", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #F39C11;
+}
+
+
+
+
